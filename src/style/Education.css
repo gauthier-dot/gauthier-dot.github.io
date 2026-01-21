@@ -1,0 +1,259 @@
+/* Education Page */
+.education-page {
+  min-height: 800px;
+  background-color: #000;
+  color: #00ff00;
+  padding: 96px 16px 32px;
+}
+
+.education-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.education-title {
+  font-family: 'Courier New', monospace;
+  font-size: 32px;
+  color: #00ff00;
+  margin-bottom: 32px;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+  animation: fadeInLeft 0.6s ease-out;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 32px;
+  animation: fadeInLeft 0.6s ease-out;
+}
+
+.timeline-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.timeline-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.timeline-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -40px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  border: 2px solid #00ff00;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-card {
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  background-color: rgba(0, 255, 0, 0.05);
+  padding: 24px;
+  transition: all 0.3s;
+}
+
+.timeline-card:hover {
+  border-color: #00ff00;
+  background-color: rgba(0, 255, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  transform: scale(1.02);
+}
+
+.timeline-year {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  color: #00ff00;
+  margin-bottom: 8px;
+}
+
+.timeline-degree {
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  color: #00ff00;
+  margin-bottom: 4px;
+}
+
+.timeline-school {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  color: rgba(0, 255, 0, 0.8);
+  margin-bottom: 12px;
+}
+
+.timeline-description {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  color: rgba(0, 255, 0, 0.7);
+  line-height: 1.5;
+}
+
+/* Admin Section */
+.admin-section {
+  margin-top: 32px;
+  border: 2px solid #00ff00;
+  background-color: rgba(0, 255, 0, 0.1);
+  padding: 24px;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.admin-title {
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  color: #00ff00;
+  margin-bottom: 16px;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-label {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  color: #00ff00;
+}
+
+.admin-input,
+.admin-textarea {
+  width: 100%;
+  background-color: rgba(0, 255, 0, 0.05);
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  padding: 8px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.admin-input:focus,
+.admin-textarea:focus {
+  outline: none;
+  border-color: #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.admin-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.admin-submit {
+  background-color: rgba(0, 255, 0, 0.1);
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  padding: 12px 24px;
+  font-family: 'Courier New', monospace;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.admin-submit:hover {
+  background-color: rgba(0, 255, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+  transform: scale(1.02);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: transparent;
+  color: rgba(255, 0, 0, 0.7);
+  border: 1px solid rgba(255, 0, 0, 0.7);
+  padding: 8px 16px;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 8px;
+}
+
+.delete-btn:hover {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .education-title {
+    font-size: 40px;
+  }
+  
+  .timeline-degree {
+    font-size: 20px;
+  }
+  
+  .timeline-description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .education-page {
+    padding-top: 112px;
+  }
+  
+  .timeline-dot {
+    left: -55px;
+  }
+
+  .timeline {
+    padding-left: 48px;
+  }
+  
+  .timeline-item {
+    padding-left: 48px;
+  }
+}
