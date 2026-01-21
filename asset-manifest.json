@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portfolio-gauthier/static/css/main.016b3427.css",
+    "main.js": "/portfolio-gauthier/static/js/main.ae100ff9.js",
+    "static/js/453.3df3b032.chunk.js": "/portfolio-gauthier/static/js/453.3df3b032.chunk.js",
+    "index.html": "/portfolio-gauthier/index.html",
+    "main.016b3427.css.map": "/portfolio-gauthier/static/css/main.016b3427.css.map",
+    "main.ae100ff9.js.map": "/portfolio-gauthier/static/js/main.ae100ff9.js.map",
+    "453.3df3b032.chunk.js.map": "/portfolio-gauthier/static/js/453.3df3b032.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.016b3427.css",
+    "static/js/main.ae100ff9.js"
+  ]
+}
