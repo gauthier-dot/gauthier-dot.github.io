@@ -2,7 +2,7 @@
   "name": "portfolio-gauthier",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gauthier-dot.github.io/",
+  "homepage": "./",
   "dependencies": {
     "@formspree/react": "^3.0.0",
     "@testing-library/dom": "^10.4.1",
